@@ -90,7 +90,7 @@ int main()
     }
     read(fin, array);
     char choice;
-    int csss = 0;
+    int chooseClass = 0;
     int num = 0;
 
     do
@@ -109,7 +109,7 @@ int main()
             cout << "press 1: for Frist class (rows 1-2)" << endl;
             cout << "press 2: for Business class (rows 3-7)" << endl;
             cout << "press 3: for Economy class (rows 8-13)" << endl;
-            cin >> csss;
+            cin >> chooseClass;
 
             int r = 0;
             int c = 0;
@@ -120,7 +120,7 @@ int main()
             cout << "enter the column " << endl;
             cin >> a;
             c = column_number(a);
-            if (csss == 1 && r <= 0 || csss == 1 && r > 2 || csss == 2 && r <= 2 && csss == 2 && r > 7 || csss == 3 && r <= 7 || csss == 3 && r > 13)
+            if (chooseClass == 1 && r <= 0 || chooseClass == 1 && r > 2 || chooseClass == 2 && r <= 2 && chooseClass == 2 && r > 7 || chooseClass == 3 && r <= 7 || chooseClass == 3 && r > 13)
             {
                 cout << "invalid seat selection :" << endl;
                 break;
